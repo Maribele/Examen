@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="styleseis.css">
+
+</head>
+
+<body>
+
+    <div class="p-8 bg-white">
+        <h1 class="text-center text-4xl font-bold mb-4">Registro de Asistencia</h1>
+        <p class="text-center text-lg mb-8">Mantén un seguimiento de la asistencia de tus alumnos a clase.</p>
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Alumnos</h2>
+            <div class="relative w-full overflow-auto">
+                <table class="w-full caption-bottom text-sm">
+                    <thead class="[&amp;_tr]:border-b">
+                        <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                FOTO
+                            </th>
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                NOMBRE
+                            </th>
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                APELLIDOS
+                            </th>
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                DNI
+                            </th>
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                TELÉFONO
+                            </th>
+                            <th
+                                class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                                ASISTENCIA
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="[&amp;_tr:last-child]:border-0">
+                        <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                                    <img class="aspect-square h-full w-full" alt="Juan"
+                                        src="/placeholder.svg?height=40&amp;width=40" />
+                                </span>
+                            </td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Juan</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Pérez Gómez</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">12345678A</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">+34 123 456 789</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 text-green-500">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 ml-2">
+                                    <path
+                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                    </path>
+                                    <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
+                                    <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                                    <img class="aspect-square h-full w-full" alt="María"
+                                        src="https://api.multiavatar.com/{{student.id}}.png" alt="User Photo" class="w-8 h-8 rounded-full mr-2/>
+                                </span>
+                        
+                            <td class=" p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">María
+                            </td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">María</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Rodríguez Sánchez</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">87654321B</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">+34 987 654 321</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <div class="inline-flex w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                                    data-v0-t="badge">
+                                    Presente
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 ml-2">
+                                    <path
+                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                    </path>
+                                    <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
+                                    <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                                    <img class="aspect-square h-full w-full" alt="Carlos"
+                                        src="/placeholder.svg?height=40&amp;width=40" />
+                                </span>
+                            </td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Carlos</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Fernández Díaz</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">54321678C</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">+34 456 789 012</td>
+                            <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 text-green-500">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="h-5 w-5 ml-2">
+                                    <path
+                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                    </path>
+                                    <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
+                                    <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl font-semibold mb-4">Agregar Alumno</h2>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Ingresa el nombre" />
+                <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Ingresa los apellidos" />
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Ingresa el DNI" />
+                <input
+                    class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Ingresa el teléfono" />
+            </div>
+        </div>
+
+        <button onclick="addTask()" class="text-white bg-black rounded-md p-4 w-full hover:bg-grey-200">Agregar
+            Alumno</button>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
